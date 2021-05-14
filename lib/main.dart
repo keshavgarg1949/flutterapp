@@ -1,25 +1,20 @@
-import 'package:flutter/material.dart';
+import 'dart:ffi';
 
-void main(){
-  runApp(Myapp());
+import 'package:flutter/material.dart';
+import 'package:flutter_catalogue/home_page.dart';
+
+void main() {
+  runApp(MyApp());
 }
 
-class Myapp extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  
 
-  const Myapp({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child : Center(     
-           child : Container(
-            child : Text("how do you do"),
-      
-    ),
-    ),
-  
-    ), 
+      home:HomePage(),
     );
   }
 }
